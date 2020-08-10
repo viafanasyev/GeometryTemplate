@@ -1068,17 +1068,5 @@ Polygon convex_hull(vector<Point> points)
 
 int main()
 {
-    cout << fixed << setprecision(6);
-    int n;
-    cin >> n;
-    vector<Point> points(n);
-    for (int i = 0; i < n; ++i)
-        cin >> points[i];
-    Polygon convex = convex_hull(points);
-    if (n % 2)
-        convex.reverse();
-    cout << convex.size() << endl;
-    for (int i = 0; i < convex.size(); ++i)
-        cout << (int)round(convex[i].x) << ' ' << (int)round(convex[i].y) << endl;
     return 0;
 }
